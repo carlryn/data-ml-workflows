@@ -4,12 +4,23 @@
 #
 #    pip-compile
 #
+boto3==1.15.11            # via smart-open
+botocore==1.18.11         # via boto3, s3transfer
+certifi==2020.6.20        # via requests
+chardet==3.0.4            # via requests
+gensim==3.8.3             # via src (setup.py)
+idna==2.10                # via requests
+jmespath==0.10.0          # via boto3, botocore
 joblib==0.14.1            # via scikit-learn
-numpy==1.18.5             # via pandas, scikit-learn, scipy, src (setup.py)
-pandas==0.24.2            # via src (setup.py)
-python-dateutil==2.8.1    # via pandas
+numpy==1.18.5             # via gensim, pandas, scikit-learn, scipy, src (setup.py)
+pandas==1.1               # via src (setup.py)
+python-dateutil==2.8.1    # via botocore, pandas
 pytz==2020.1              # via pandas
+requests==2.24.0          # via smart-open
+s3transfer==0.3.3         # via boto3
 scikit-learn==0.22.2.post1  # via sklearn
-scipy==1.4.1              # via scikit-learn, src (setup.py)
-six==1.15.0               # via python-dateutil
+scipy==1.4.1              # via gensim, scikit-learn, src (setup.py)
+six==1.15.0               # via gensim, python-dateutil
 sklearn==0.0              # via src (setup.py)
+smart-open==2.2.1         # via gensim
+urllib3==1.25.10          # via botocore, requests
